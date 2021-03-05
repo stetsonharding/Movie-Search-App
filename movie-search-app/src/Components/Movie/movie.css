@@ -1,0 +1,56 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+/* card syling */
+.card{
+    background-color: blueviolet;
+    box-shadow: 5px 10px yellow;
+    width: 47%;
+    border: 1px solid black;
+    padding: .7em 0;
+    margin: 0 auto;
+}
+
+.movie-poster{
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    padding-top: 10px;
+    display: block;
+    margin: 0 auto; 
+}
+
+.movie-title{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: .5em;
+    margin: 0;
+    text-align: center;
+}
+
+.movie-description{
+    color: white;
+    font-size: 1.2em;
+    padding: .5em;
+    letter-spacing: .5px;
+    line-height: 1.1em;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+  
+}
+
+.movie-releaseDate{
+    color: white;
+    font-size: 1.2em;
+
+    
+}
+
+
+

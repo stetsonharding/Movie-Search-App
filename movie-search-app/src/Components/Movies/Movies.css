@@ -1,0 +1,30 @@
+.App-title{
+    font-size: 3em;
+    text-align: center;
+}
+
+.form{
+  text-align: center;
+  font-size: 1.3em;
+}
+
+/* all movies */
+.Movie_list{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.search-input{
+  padding: .5em;
+  width: 500px;
+}
+button{
+  padding: .5em;
+  font-size: .7em;
+  margin: 1em;
+  border-radius: 20px;
+}
+
