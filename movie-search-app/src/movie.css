@@ -1,0 +1,29 @@
+
+
+.card{
+    background-color: blueviolet;
+    box-shadow: 5px 10px yellow;
+    width: 50%;
+ 
+   
+}
+
+.movie-poster{
+    width: 15%;
+    margin: 1em 1em;
+}
+
+.movie-title{
+    color: white;
+    font-weight: bolder;
+    padding: .5em;
+    margin: 0;
+}
+
+.movie-description{
+    color: white;
+    padding: .5em;
+    margin: 0;
+    max-width: 1000px;
+}
+
