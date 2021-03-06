@@ -7,12 +7,14 @@
 
 /* card syling */
 .card{
-    background-color: blueviolet;
-    box-shadow: 5px 10px yellow;
-    width: 47%;
+    background-color: #587DCA;
+    width: 40%;
     border: 1px solid black;
     padding: .7em 0;
-    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+    margin: 1em;
+    box-shadow: 1px 1px 1px 1px rgb(78, 1, 55);
 }
 
 .movie-poster{

@@ -1,11 +1,12 @@
 .App-title{
     font-size: 3em;
     text-align: center;
+    
 }
 
 .form{
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 /* all movies */
@@ -13,7 +14,7 @@
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    justify-content: center;
     padding: 20px 0;
 }
 
