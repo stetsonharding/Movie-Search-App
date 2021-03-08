@@ -8,7 +8,7 @@ const Movie = ({movie}) =>{
             <img className="movie-poster" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="" />
             <p className="movie-title">{movie.original_title}</p>
             <p className="movie-description">{movie.overview}</p>
-            <p className="movie-releaseDate">{movie.release_date}</p>
+            <p className="movie-releaseDate"><i>Release Date:</i> {movie.release_date}</p>
         </div>
     )
 }
