@@ -1,13 +1,12 @@
 import React, { useState } from "react"
 import Movie from "../../Components/Movie/Movie";
-import Pagination from "./Pagination"
+import Pagination from "../../Components/Pagination/Pagination"
 
 import './Movies.css'
 
 const Movies = () => {
     const [query, setQuery] = useState("")
     const [movies, setMovies] = useState([])
-    const [loading, setLoading] = useState(true)
     const [currentPage, setCurrentPage] = useState(1)
     const [moviesPerPage] = useState(4)
 
@@ -20,7 +19,6 @@ const Movies = () => {
         const moviePromise = await fetch(url)
         const data = await moviePromise.json();
         setMovies(data.results)
-        setLoading(false)
     }
 
     const indexOfLastMovie = currentPage * moviesPerPage
@@ -53,9 +51,10 @@ const Movies = () => {
             <div className="Movie_list">
                 {currentMovie.filter(movie =>movie.poster_path).map(movie =>
                    <Movie key={movie.id} movie={movie} />
-                  
                 )}
-                <Pagination moviesPerPage={moviesPerPage} totalMovies={movies.length} paginate={paginate}/>
+            </div>
+                <div>
+            <Pagination moviesPerPage={moviesPerPage} totalMovies={movies.length} paginate={paginate}/>
             </div>
         </>
     )

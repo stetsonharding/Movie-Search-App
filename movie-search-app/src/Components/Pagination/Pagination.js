@@ -1,10 +1,12 @@
 import React from 'react'
 
+import "./pagination.css"
+
 export const Pagination = ({moviesPerPage, totalMovies, paginate}) => {
 
     const pageNumbers = []
 
-    for(let i = 0; i <= Math.ceil(totalMovies / moviesPerPage); i++){
+    for(let i = 1; i <= Math.ceil(totalMovies / moviesPerPage); i++){
         pageNumbers.push(i)
     }
     return (
@@ -13,7 +15,7 @@ export const Pagination = ({moviesPerPage, totalMovies, paginate}) => {
                 {pageNumbers.map(number =>(
                     <li key={number} className="page-item">
                         <a onClick={() => paginate(number)} href="!#" className="page-link">
-                            {number}
+                           <h1>{number}</h1> 
                         </a>
 
                     </li>
