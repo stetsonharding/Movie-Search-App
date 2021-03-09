@@ -23,9 +23,12 @@ const Movies = () => {
         setLoading(false)
        }, 3000);
        //fetch movies api
+     
         const moviePromise = await fetch(url)
         const data = await moviePromise.json();
         setMovies(data.results)
+    
+        
     }
 
 
@@ -56,7 +59,12 @@ const Movies = () => {
             </form>
 
             <div className="Movie_list">
-                {loading ? <h2 className="loadingText">Gathering movie information...</h2> : 
+                {/* Loading Logic */}
+                {loading ? 
+                <div className="loading-container">
+                    <i className="fas fa-video fa-3x loading-image"></i>
+                    <h1>loading...</h1>
+                </div> : 
                 currentMovie.filter(movie =>movie.poster_path).map(movie =>
                    <Movie key={movie.id} movie={movie} />
                 )}
