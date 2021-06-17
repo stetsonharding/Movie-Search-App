@@ -1,25 +1,22 @@
-.pagination{
-    display: flex;
-    justify-content: center;
-    border: 1px solid white;
-    
-    
-    border-radius: 20px;
+.pagination {
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
 
+  border-radius: 20px;
 }
 
-.page-item{
-    list-style: none;
-    padding: 2em;
- 
+.page-item {
+  list-style: none;
+  padding: 2em;
 }
 
-.page-link{
-    width: 50px;
-    color: pink;
-    text-decoration: none;
+.page-link {
+  width: 50px;
+  color: pink;
+  text-decoration: none;
 }
 
-.page-link:hover{
-    color: blue;
+.page-link:hover {
+  color: blue;
 }

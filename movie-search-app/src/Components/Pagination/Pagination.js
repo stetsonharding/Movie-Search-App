@@ -1,29 +1,26 @@
-import React from 'react'
+import React from "react";
 
-import "./pagination.css"
+import "./pagination.css";
 
-export const Pagination = ({moviesPerPage, totalMovies, paginate}) => {
+export const Pagination = ({ moviesPerPage, totalMovies, paginate }) => {
+  const pageNumbers = [];
 
-    const pageNumbers = []
+  for (let i = 1; i <= Math.ceil(totalMovies / moviesPerPage); i++) {
+    pageNumbers.push(i);
+  }
+  return (
+    <nav>
+      <ul className="pagination">
+        {pageNumbers.map((number) => (
+          <li key={number} className="page-item">
+            <a onClick={() => paginate(number)} href="!#" className="page-link">
+              <h1>{number}</h1>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
 
-    for(let i = 1; i <= Math.ceil(totalMovies / moviesPerPage); i++){
-        pageNumbers.push(i)
-    }
-    return (
-        <nav>
-            <ul className="pagination">
-                {pageNumbers.map(number =>(
-                    <li key={number} className="page-item">
-                        <a onClick={() => paginate(number)} href="!#" className="page-link">
-                           <h1>{number}</h1> 
-                        </a>
-
-                    </li>
-                ))}
-            </ul>
-        </nav>
-    )
-}
-
-
-export default Pagination
+export default Pagination;
